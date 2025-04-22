@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Alexander Hartwell",
+    "Fee": 200,
+    "Speciality": "Criminal Law",
+    "license_no": "CRL-98765",
+    "image": "https://i.ibb.co.com/Kxs4nVvh/rsz-0bafee3a-8f7a-4af9-9c0b-0e505466806e.png",
+    "Availability": ["Monday", "Wednesday", "Friday"],
+    "experience": 12
+  },
+  {
+    "id": 2,
+    "name": "Liam Bennett",
+    "Fee": 180,
+    "Speciality": "Family Law",
+    "license_no": "FML-87654",
+    "image": "https://i.ibb.co.com/PGFzGXPR/rsz-1c75bc4be-0bbc-4b37-8bae-c911118bccc4.png",
+    "Availability": ["Tuesday", "Thursday"],
+    "experience": 9
+  },
+  {
+    "id": 3,
+    "name": "Benjamin Cross",
+    "Fee": 220,
+    "Speciality": "Corporate Law",
+    "license_no": "CPL-76543",
+    "image": "https://i.ibb.co.com/4ZWbq0XF/rsz-1jeppe-monster-qiznyuze638-unsplash.jpg",
+    "Availability": ["Monday", "Tuesday", "Friday"],
+    "experience": 15
+  },
+  {
+    "id": 4,
+    "name": "Isabella Nguyen",
+    "Fee": 150,
+    "Speciality": "Immigration Law",
+    "license_no": "IML-65432",
+    "image": "https://i.ibb.co.com/BV4dZt9r/rsz-1gulnar-mardanova-nmwpwcudoja-unsplash-1.jpg",
+    "Availability": ["Wednesday", "Thursday"],
+    "experience": 7
+  },
+  {
+    "id": 5,
+    "name": "Daniel Greystone",
+    "Fee": 175,
+    "Speciality": "Intellectual Property",
+    "license_no": "IPL-54321",
+    "image": "https://i.ibb.co.com/WNLQKynf/rsz-3a170563-d6bd-4df3-a6c4-5956021a83bc.png",
+    "Availability": ["Monday", "Thursday"],
+    "experience": 11
+  },
+  {
+    "id": 6,
+    "name": "Mason Clark",
+    "Fee": 210,
+    "Speciality": "Environmental Law",
+    "license_no": "ENL-43210",
+    "image": "https://i.ibb.co.com/rK5BLF9T/rsz-83ef41e3-e143-42a3-bd0c-c1b5da364988.png",
+    "Availability": ["Tuesday", "Friday"],
+    "experience": 10
+  },
+  {
+    "id": 7,
+    "name": "Mia Ahmed",
+    "Fee": 160,
+    "Speciality": "Labor Law",
+    "license_no": "LBL-32109",
+    "image": "https://i.ibb.co.com/KxhyyxkG/rsz-154a2665f-1e6b-451e-9eaa-d6569915653e.png",
+    "Availability": ["Wednesday", "Friday"],
+    "experience": 6
+  },
+  {
+    "id": 8,
+    "name": "Michael Devlin",
+    "Fee": 190,
+    "Speciality": "Tax Law",
+    "license_no": "TAX-21098",
+    "image": "https://i.ibb.co.com/cKxXmDGS/rsz-1125bead8-625a-4299-bb61-d209914dd048.png",
+    "Availability": ["Monday", "Thursday"],
+    "experience": 13
+  },
+  {
+    "id": 9,
+    "name": "Nathaniel Hawthorne",
+    "Fee": 230,
+    "Speciality": "Real Estate Law",
+    "license_no": "REL-10987",
+    "image": "https://i.ibb.co.com/8nnY53jp/rsz-368923f2-9a29-4dbc-a34a-075d7b48514a.png",
+    "Availability": ["Tuesday", "Friday"],
+    "experience": 14
+  },
+  {
+    "id": 10,
+    "name": "James Wilson",
+    "Fee": 170,
+    "Speciality": "Civil Rights Law",
+    "license_no": "CVL-09876",
+    "image": "https://i.ibb.co.com/GvS0c4Nh/rsz-10350717-ff63-42a5-a782-01b97b38da90.png",
+    "Availability": ["Wednesday", "Saturday"],
+    "experience": 8
+  },
+  {
+    "id": 11,
+    "name": "Amelia Rivera",
+    "Fee": 200,
+    "Speciality": "Healthcare Law",
+    "license_no": "HCL-08765",
+    "image": "https://i.ibb.co.com/Qx4cWC5/rsz-ee87afff-df3b-4e1c-8cbb-0bd3e8e60890-1.png",
+    "Availability": ["Monday", "Tuesday", "Thursday"],
+    "experience": 12
+  },
+  {
+    "id": 12,
+    "name": "Isaac Pembroke",
+    "Fee": 185,
+    "Speciality": "Bankruptcy Law",
+    "license_no": "BNK-07654",
+    "image": "https://i.ibb.co.com/938wZMGr/rsz-image-1.jpg",
+    "Availability": ["Friday", "Saturday"],
+    "experience": 9
+  }
+]
