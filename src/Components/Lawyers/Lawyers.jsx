@@ -16,8 +16,8 @@ const Lawyers = ({ lawyers }) => {
   return (
     <>
       <div className="text-center mb-10 mt-15 font-[Mulish]">
-        <h1 className="text-2xl font-extrabold">Our Best Lawyers</h1>
-        <p className="w-2/3 mx-auto text-[12px] m-5">
+        <h1 className="text-3xl md:text-5xl font-extrabold">Our Best Lawyers</h1>
+        <p className="w-2/3 mx-auto text-[12px] md:text-lg m-5">
           Our platform connects you with verified, experienced Lawyers across
           various specialties — all at your convenience. Whether it's a routine
           checkup or urgent consultation, book appointments in minutes and
