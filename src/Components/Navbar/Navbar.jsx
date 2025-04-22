@@ -1,8 +1,9 @@
-
+import { FaHome } from 'react-icons/fa';
+import { CiBookmarkCheck } from 'react-icons/ci';
 import { NavLink } from 'react-router';
+import { TbLogs } from 'react-icons/tb';
+import { IoIosContacts } from 'react-icons/io';
 const Navbar = () => {
-
-  
   return (
     <div className="navbar">
       <div className="navbar-start mx-10">
@@ -29,21 +30,34 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <NavLink
+                to={'/'}
+                className={({ isActive }) =>
+                  isActive ? 'underline text-blue-500 font-bold' : ''
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <NavLink
+                to={'/my-bookings'}
+                className={({ isActive }) =>
+                  isActive ? 'underline text-blue-500 font-bold' : ''
+                }
+              >
+                My-Bookings
+              </NavLink>
             </li>
             <li>
-              <a>Item 3</a>
+              <NavLink
+                to={'/blogs'}
+                className={({ isActive }) =>
+                  isActive ? 'underline text-blue-500 font-bold' : ''
+                }
+              >
+                Blogs
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -59,16 +73,45 @@ const Navbar = () => {
         </h2>
       </div>
       <div className="navbar-center hidden lg:flex mx-auto">
-        <ul className="menu menu-horizontal px-1">
-          <NavLink to={'/'} className={({isActive})=>isActive?'underline text-blue-500 font-bold':''}><li className='px-4'>Home</li></NavLink>
-          <NavLink to={'/my-bookings'} className={({isActive})=>isActive?'underline text-blue-500 font-bold':''}><li className='px-4'>My-Bookings</li></NavLink>
-          <NavLink to={'/blogs'} className={({isActive})=>isActive?'underline text-blue-500 font-bold':''}><li className='px-4'>Blogs</li></NavLink>
-          <NavLink to={'/contact'} className={({isActive})=>isActive?'underline text-blue-500 font-bold':''}><li className='px-4'>Contact US</li></NavLink>
-          
+        <ul className="menu menu-horizontal px-1 text-lg font-[sora]">
+          <NavLink
+            to={'/'}
+            className={({ isActive }) =>
+              isActive ? 'underline text-blue-500 font-bold' : ''
+            }
+          >
+            <li className="px-4"><span><FaHome />Home</span></li>
+          </NavLink>
+          <NavLink
+            to={'/my-bookings'}
+            className={({ isActive }) =>
+              isActive ? 'underline text-blue-500 font-bold' : ''
+            }
+          >
+            <li className="px-4"><span><CiBookmarkCheck />My-Bookings</span></li>
+          </NavLink>
+          <NavLink
+            to={'/blogs'}
+            className={({ isActive }) =>
+              isActive ? 'underline text-blue-500 font-bold' : ''
+            }
+          >
+            <li className="px-4"> <span><TbLogs />Blogs</span></li>
+          </NavLink>
+          <NavLink
+            to={'/contact'}
+            className={({ isActive }) =>
+              isActive ? 'underline text-blue-500 font-bold' : ''
+            }
+          >
+            <li className="px-4"><span><IoIosContacts />Contact US</span></li>
+          </NavLink>
         </ul>
       </div>
       <div className="navbar-end mx-15">
-        <a className="btn bg-[#0EA106] p-5 text-white rounded-4xl hidden md:flex">Contact Now</a>
+        <a className="btn bg-[#0EA106] p-5 text-white rounded-4xl hidden md:flex">
+          Contact Now
+        </a>
       </div>
     </div>
   );
