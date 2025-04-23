@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import { RiRegisteredLine } from 'react-icons/ri';
 import { IoAlertCircleOutline } from 'react-icons/io5';
@@ -14,7 +14,13 @@ const Details = () => {
      return (
        <Error></Error>
      );
-   }
+  }
+  useEffect(() => {
+    if (clickDetails?.name) {
+      document.title = clickDetails.name;
+    }
+  }, [clickDetails]);
+
 const {name, image, Speciality, license_no, Fee, Availability, experience } =
     clickDetails || {};
   const handleBookings = lawyer => {
