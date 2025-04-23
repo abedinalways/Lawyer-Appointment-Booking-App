@@ -35,7 +35,7 @@ const Lawyers = ({ lawyers }) => {
             setDisplayAll(prv => !prv);
             if (displayAll) window.scrollTo(0, 400);
           }}
-          className="btn btn-active my-1 w-40  bg-[#0EA106] p-5 text-white rounded-4xl"
+          className="btn btn-active my-1 w-50 md:w-58 text-lg md:text-xl bg-[#0EA106] p-5 text-white rounded-4xl"
         >
           {displayAll ? 'Show less lawyers' : 'Show all lawyers'}
         </button>

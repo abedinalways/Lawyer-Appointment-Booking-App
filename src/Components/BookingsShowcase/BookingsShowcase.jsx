@@ -19,7 +19,7 @@ const BookingsShowcase = ({ lawyer, handleRemove }) => {
       <div className="flex justify-center items-center mt-6">
         <button
           onClick={() => handleRemove(id)}
-          className="text-red-500 btn  rounded-2xl border-red-300"
+          className="text-red-500 btn w-45 rounded-2xl border-red-300"
         >
           Cancel Appointment
         </button>

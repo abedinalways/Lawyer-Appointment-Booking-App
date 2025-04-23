@@ -33,7 +33,7 @@ const {name, image, Speciality, license_no, Fee, Availability, experience } =
         <div className="card card-border bg-gray-200 shadow-md rounded-2xl mt-5 mb-4 text-center">
           <div className="card-body">
             <h2 className="md:text-4xl text-3xl font-bold">Lawyer’s Profile Details</h2>
-            <p className="w-4/5 mx-auto text-[12px]">
+            <p className="w-4/5 mx-auto text-[12px] text-gray-600">
               Experienced and dedicated legal professional specializing in
               [practice area, e.g., family law, criminal defense, corporate
               law]. Committed to providing personalized legal solutions and
@@ -42,7 +42,7 @@ const {name, image, Speciality, license_no, Fee, Availability, experience } =
           </div>
         </div>
         {/* dynamic part */}
-        <div className="border-1 border-gray-200 shadow-sm p-2 md:flex gap-3 md:justify-between items-center">
+        <div className="border-1 border-gray-200 shadow-sm p-2 md:flex gap-3 items-center">
           <div className='flex justify-center items-center md:justify-start md:items-start'> 
             <img src={image} className='rounded-lg mb-5 w-45 md:w-60 md:h-60 lg:w-100 lg:h-100'/>
             </div>
@@ -60,12 +60,11 @@ const {name, image, Speciality, license_no, Fee, Availability, experience } =
               </h1>
             </div>
             <h2 className='font-[sora]'>
-              Availability: <br/>
+              Availability:
               {Availability.map((available, index) => (
                 <button
                   key={index}
-                  className="bg-green-200 p-2 font-semibold rounded-md m-2 md:flex text-[10px] md:text-[14px]"
-                >
+                  className="bg-green-200 p-3 font-semibold rounded-md m-2 flex-col mx-2 text-[9px] md:text-[14px]">
                   {available}
                 </button>
               ))}

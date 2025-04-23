@@ -8,8 +8,8 @@ const Error = () => {
         <h1 className="text-[90px] md:text-[120px] font-extrabold text-indigo-600 drop-shadow-lg animate-bounce">
           404
         </h1>
-        <p className="text-2xl md:text-3xl font-semibold text-gray-800">
-          Page Not Found
+        <p className="text-2xl md:text-4xl font-bold text-gray-800 font-[sora]">
+          No Lawyer Found!!
         </p>
         <p className="text-gray-600 mt-2 max-w-md text-xl font-bold">
           Invalid Dynamic Route Detected

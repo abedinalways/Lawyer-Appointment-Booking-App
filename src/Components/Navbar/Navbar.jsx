@@ -109,7 +109,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end mx-15">
-        <a className="btn bg-[#0EA106] p-5 text-white rounded-4xl hidden md:flex">
+        <a className="btn bg-[#0EA106] p-5 px-8 text-lg text-center text-white rounded-4xl hidden md:flex">
           Contact Now
         </a>
       </div>

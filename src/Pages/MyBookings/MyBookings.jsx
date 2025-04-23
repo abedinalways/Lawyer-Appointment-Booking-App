@@ -80,7 +80,7 @@ const MyBookings = () => {
         <ResponsiveContainer width="100%" height={350}>
           <BarChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
+            <XAxis dataKey="name"  className='text-[12px] font-bold md:text-[16px]'/>
             <YAxis />
             <Tooltip content={<CustomTooltip />} />
             <Bar
@@ -101,7 +101,7 @@ const MyBookings = () => {
         <h1 className='text-2xl font-bold'>Today's Appointment</h1>
         <p className='text-md text-center'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
       </div>
-      <div className="grid justify-center md:grid-cols-2 gap-3 m-6 p-4 mx-4">
+      <div className="grid justify-center md:grid-cols-2 gap-3 m-6 p-2 mx-2">
         {displayLawyers.map(lawyer => (
           <BookingsShowcase
             key={lawyer.id}
