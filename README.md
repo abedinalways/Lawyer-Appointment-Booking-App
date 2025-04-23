@@ -1,12 +1,27 @@
-# React + Vite
+# 🏷️ Lawyer Appointment Booking Application.
+A modern and responsive web application for booking appointments with lawyers. Built with **React**, styled using **Tailwind CSS** and **DaisyUI**, and enhanced with **Framer Motion**, **Recharts**, and **React Icons** for a smooth and interactive user experience. The project is deployed on **Netlify** for seamless accessibility.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 Live Site
 
-Currently, two official plugins are available:
+👉 [Visit the Live Site](https://lucky-fenglisu-b2c104.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔍 Browse and view lawyer profiles
+- 🗓️ Book appointments with available lawyers
+- 📊 Dashboard with appointment statistics (using Recharts)
+- 🔔 Toast notifications
+- 🎨 Fully responsive UI
+- 🔁 Smooth page transitions with Framer Motion
+- 🌐 Client-side routing with React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React** – Frontend library
+- **React Router** – Navigation
+- **Tailwind CSS** – Utility-first CSS framework
+- **DaisyUI** – Tailwind component library
+- **React Icons** – Icon library
+- **Recharts** – Data visualization
+- **Framer Motion** – Animations
+- **Netlify** – Deployment
