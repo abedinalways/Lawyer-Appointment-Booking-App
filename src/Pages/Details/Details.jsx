@@ -21,7 +21,7 @@ const Details = () => {
         {/* details card */}
         <div className="card card-border bg-gray-200 shadow-md rounded-2xl mt-5 mb-4 text-center">
           <div className="card-body">
-            <h2 className="text-2xl font-bold">Lawyer’s Profile Details</h2>
+            <h2 className="md:text-4xl text-3xl font-bold">Lawyer’s Profile Details</h2>
             <p className="w-4/5 mx-auto text-[12px]">
               Experienced and dedicated legal professional specializing in
               [practice area, e.g., family law, criminal defense, corporate
@@ -31,36 +31,35 @@ const Details = () => {
           </div>
         </div>
         {/* dynamic part */}
-        <div className="card card-side border-1 border-gray-200 shadow-sm p-2">
-          <figure className="rounded-lg w-42 h-42 md:w-60 md:h-60 flex items-center mt-6 md:mt-0">
-            <img src={image} />
-          </figure>
-          <div className="card-body">
+        <div className="border-1 border-gray-200 shadow-sm p-2 md:flex gap-3 md:justify-between items-center">
+          <div className='flex justify-center items-center md:justify-start md:items-start'> 
+            <img src={image} className='rounded-lg mb-5 w-45 md:w-60 md:h-60'/>
+            </div>
+          <div className="flex-col items-center justify-center mr-4 p-4 mb-3">
             <span className="flex md:gap-4 gap-2 items-center text-[8px] md:text-[12px]">
-              <small className="bg-blue-100 px-2 py-1 md:px-3 md:py-2 rounded-xl text-blue-600 font-bold flex">
+              <small className="bg-blue-100 px-2 py-1 md:px-3 md:py-2 rounded-xl text-blue-600 font-bold flex text-[10px] md:text-[14px]">
                 {experience}+ years experience
               </small>
             </span>
-            <h2 className="card-title text-md md:text-2xl font-bold">{name}</h2>
-            <div className="flex gap-5">
-              <h1>{Speciality}</h1>
-              <h1 className="flex items-center gap-2">
-                <RiRegisteredLine />
-                License No: {license_no}
+            <h2 className="card-title text-lg md:text-3xl font-bold mb-3">{name}</h2>
+            <div className="md:flex flex-col gap-5">
+              <h1 className='font-bold mb-3'>{Speciality}</h1>
+              <h1 className="flex gap-2 font-semibold items-center mb-2">
+                <RiRegisteredLine />{license_no}
               </h1>
             </div>
-            <h2>
-              Availability:
+            <h2 className='font-[sora]'>
+              Availability: <br/>
               {Availability.map((available, index) => (
                 <button
                   key={index}
-                  className="bg-green-200 p-2 rounded-md mx-4"
+                  className="bg-green-200 p-2 font-semibold rounded-md m-2 md:flex text-[10px] md:text-[14px]"
                 >
                   {available}
                 </button>
               ))}
             </h2>
-            <h2>Consultation Fee: $ {Fee}</h2>
+            <h2 className='text-md font-semibold'>Consultation Fee: $ {Fee}</h2>
           </div>
         </div>
         {/* Booking part */}
@@ -68,14 +67,14 @@ const Details = () => {
           <div className="card-body">
             <h2 className="card-title">Book An Appointment</h2>
             <hr className="border-t-1 border-dashed border-gray-200 my-4" />
-            <div className="flex justify-around items-center">
+            <div className="flex md:justify-around items-center justify-evenly gap-2">
               <h3>Availability</h3>
-              <button className=" text-[12px] btn bg-green-100 text-green-600 px-3 rounded-xl">
+              <button className="text-[10px] md:text-[12px] btn bg-green-100 text-green-600 px-3 rounded-xl">
                 Lawyer available Today
               </button>
             </div>
             <hr className="border-t-1 border-solid border-gray-200 my-4" />
-            <p className="text-orange-400 bg-orange-100 btn-active rounded-xl text-center flex items-center gap-2 justify-center">
+            <p className="text-orange-400 bg-orange-100 btn-active rounded-xl text-center flex items-center gap-2 justify-center text-[10px] md:text-[16px]">
               <IoAlertCircleOutline /> Due to high patient volume, we are
               currently accepting appointments for today only. We appreciate
               your understanding and cooperation.

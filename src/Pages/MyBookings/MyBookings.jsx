@@ -97,9 +97,9 @@ const MyBookings = () => {
       </div>
 
       {/* Cards Section */}
-      <div className='flex flex-col justify-center items-center'>
+      <div className='flex flex-col justify-center items-center mt-10 font-[lato]'>
         <h1 className='text-2xl font-bold'>Today's Appointment</h1>
-        <p className='text-md'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
+        <p className='text-md text-center'>Our platform connects you with verified, experienced Lawyers across various specialties — all at your convenience.</p>
       </div>
       <div className="grid justify-center md:grid-cols-2 gap-3 m-6 p-4 mx-4">
         {displayLawyers.map(lawyer => (
