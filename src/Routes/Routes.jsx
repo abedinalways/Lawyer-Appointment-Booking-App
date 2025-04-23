@@ -7,6 +7,7 @@ import Details from '../Pages/Details/Details';
 import MyBookings from '../Pages/MyBookings/MyBookings';
 import Blogs from '../Pages/Blogs/Blogs';
 import Loader from '../Components/Loader/Loader';
+import Error from '../Pages/error/Error';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
         path: '/details/:id',
         Component: Details,
         hydrateFallbackElement: <Loader></Loader>,
+        errorElement:<Error></Error>,
         loader: () => fetch('../data.json'),
       },
       {

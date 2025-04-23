@@ -37,7 +37,7 @@ const Lawyers = ({ lawyers }) => {
           }}
           className="btn btn-active my-1 w-40  bg-[#0EA106] p-5 text-white rounded-4xl"
         >
-          {displayAll ? 'Show less lawyers' : 'show all lawyers'}
+          {displayAll ? 'Show less lawyers' : 'Show all lawyers'}
         </button>
       </div>
     </>

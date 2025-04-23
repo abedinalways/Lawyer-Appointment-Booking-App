@@ -3,14 +3,19 @@ import { Link, useLoaderData, useParams } from 'react-router';
 import { RiRegisteredLine } from 'react-icons/ri';
 import { IoAlertCircleOutline } from 'react-icons/io5';
 import { addBookingsData } from '../../Utilities';
+import Error from '../error/Error';
 
 const Details = () => {
   const { id } = useParams();
   const clickButton = parseInt(id);
   const lawyerData = useLoaderData();
- 
   const clickDetails = lawyerData.find(lawyer => lawyer.id === clickButton);
-  const {name, image, Speciality, license_no, Fee, Availability, experience } =
+   if (!clickDetails) {
+     return (
+       <Error></Error>
+     );
+   }
+const {name, image, Speciality, license_no, Fee, Availability, experience } =
     clickDetails || {};
   const handleBookings = lawyer => {
     addBookingsData(lawyer)
