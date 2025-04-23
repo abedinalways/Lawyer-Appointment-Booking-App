@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaFacebook, FaGit, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { NavLink } from 'react-router';
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-black text-base-content rounded mt-8">
+    <footer className="footer footer-horizontal footer-center bg-black text-base-content rounded mt-8 overflow-hidden">
       <div>
         <h2 className="text-xl font-extrabold font-[Plus_Jakarta_Sans]">
           <span className="flex items-center text-white">
@@ -17,7 +17,8 @@ const Footer = () => {
           </span>
         </h2>
       </div>
-      <nav className="grid grid-flow-col  gap-4 md:gap-6 text-white text-sm md:text-lg font-[sora]">
+
+      <nav className="grid grid-flow-col gap-4 md:gap-6 text-white text-sm md:text-lg font-[sora]">
         <NavLink
           to={'/'}
           className={({ isActive }) =>
@@ -45,9 +46,11 @@ const Footer = () => {
         <a className="link link-hover">Contact Us</a>
       </nav>
       <nav>
-        <div className="grid grid-flow-col gap-4 mb-2">
+        <div className='min-w-screen  mx-auto'>
+          <hr className="border-t border-dashed border-gray-50" />
+        </div>
+        <div className="grid grid-flow-col gap-4 mb-2 mt-1">
           <NavLink to="https://web.facebook.com/Abedin.always" target="_blank">
-            {' '}
             <FaFacebook className="text-2xl text-blue-500"></FaFacebook>
           </NavLink>
           <NavLink
@@ -58,6 +61,9 @@ const Footer = () => {
           </NavLink>
           <NavLink to="https://github.com/abedinalways" target="_blank">
             <FaGithub className="text-2xl text-white"></FaGithub>
+          </NavLink>
+          <NavLink to="https://www.linkedin.com/in/sheikh-minhajul-abedin-bb51162a4/" target="_blank">
+            <FaLinkedin className="text-2xl text-blue-500"></FaLinkedin>
           </NavLink>
         </div>
       </nav>

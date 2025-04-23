@@ -44,7 +44,7 @@ const {name, image, Speciality, license_no, Fee, Availability, experience } =
         {/* dynamic part */}
         <div className="border-1 border-gray-200 shadow-sm p-2 md:flex gap-3 md:justify-between items-center">
           <div className='flex justify-center items-center md:justify-start md:items-start'> 
-            <img src={image} className='rounded-lg mb-5 w-45 md:w-60 md:h-60'/>
+            <img src={image} className='rounded-lg mb-5 w-45 md:w-60 md:h-60 lg:w-100 lg:h-100'/>
             </div>
           <div className="flex-col items-center justify-center mr-4 p-4 mb-3">
             <span className="flex md:gap-4 gap-2 items-center text-[8px] md:text-[12px]">
