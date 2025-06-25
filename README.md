@@ -1,9 +1,11 @@
 # 🏷️ Lawyer Appointment Booking Application.
 A modern and responsive web application for booking appointments with lawyers. Built with **React**, styled using **Tailwind CSS** and **DaisyUI**, and enhanced with **Framer Motion**, **Recharts**, and **React Icons** for a smooth and interactive user experience. The project is deployed on **Netlify** for seamless accessibility.
 
+<img src="https://github.com/abedinalways/Lawyer-Appointment-Booking-App/blob/main/Lawer_BD.png">
+
 ## 🔗 Live Site
 
-👉 [Visit the Live Site](https://lucky-fenglisu-b2c104.netlify.app/)
+🔗 **Live Website:** [https://lucky-fenglisu-b2c104.netlify.app/](https://lucky-fenglisu-b2c104.netlify.app/)
 
 ## 🚀 Features
 
